@@ -2,8 +2,6 @@ import UIKit
 
 class ManipulateViewController: UIViewController {
     
-    var worker: Worker?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -13,10 +11,13 @@ class ManipulateViewController: UIViewController {
         performSegue(withIdentifier: "showToWorker", sender: self)
     }
     
+    @IBAction func manipulateCompanyButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "showToCompanies", sender: self)
+    }
     @IBAction func backToMenuButtonPressed(_ sender: Any) {
         self.dismiss(animated: true)
     }
     @IBAction func manipulateAgentButtonPressed(_ sender: Any) {
-                performSegue(withIdentifier: "showToAgent", sender: self)
+        performSegue(withIdentifier: "showToAgent", sender: self)
     }
 }

@@ -8,8 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		33F3CD4DD8C57F1D62BFF471 /* Pods_FINAL_SMTHTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D8912F351AEFA7D523E87B /* Pods_FINAL_SMTHTests.framework */; };
+		484A2F7925384F440069E8AB /* CompanyDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A2F7825384F440069E8AB /* CompanyDateViewController.swift */; };
+		484C88C7253874E200D3C831 /* AgentDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C88C5253874E200D3C831 /* AgentDateTableViewCell.swift */; };
+		484C88C8253874E200D3C831 /* AgentDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484C88C6253874E200D3C831 /* AgentDateTableViewCell.xib */; };
+		484C88CA2538B1FC00D3C831 /* ContractDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C88C92538B1FC00D3C831 /* ContractDateViewController.swift */; };
+		484C890B2538C32500D3C831 /* ContractDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C89092538C32500D3C831 /* ContractDateTableViewCell.swift */; };
+		484C890C2538C32500D3C831 /* ContractDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484C890A2538C32500D3C831 /* ContractDateTableViewCell.xib */; };
+		484C89102538ED0A00D3C831 /* PaymentDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C890F2538ED0A00D3C831 /* PaymentDateViewController.swift */; };
+		484C89132538EF5400D3C831 /* PaymentDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C89112538EF5400D3C831 /* PaymentDateTableViewCell.swift */; };
+		484C89142538EF5400D3C831 /* PaymentDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484C89122538EF5400D3C831 /* PaymentDateTableViewCell.xib */; };
+		484D8F812537027B00431EA9 /* AgentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D8F7F2537027B00431EA9 /* AgentTableViewCell.swift */; };
+		484D8F822537027B00431EA9 /* AgentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484D8F802537027B00431EA9 /* AgentTableViewCell.xib */; };
+		485766C72536525600863EF8 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485766C62536525600863EF8 /* Payment.swift */; };
+		485766C92536588200863EF8 /* WorkerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485766C82536588200863EF8 /* WorkerTableViewController.swift */; };
+		485766CB2536589000863EF8 /* AgentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485766CA2536589000863EF8 /* AgentTableViewController.swift */; };
+		485766CD2536589F00863EF8 /* PaymentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485766CC2536589F00863EF8 /* PaymentTableViewController.swift */; };
+		485766CF253658AE00863EF8 /* CompanyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485766CE253658AE00863EF8 /* CompanyTableViewController.swift */; };
+		485766D1253658BB00863EF8 /* ContractTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485766D0253658BB00863EF8 /* ContractTableViewController.swift */; };
+		485766D7253668DB00863EF8 /* WorkerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485766D5253668DB00863EF8 /* WorkerTableViewCell.swift */; };
+		485766D8253668DB00863EF8 /* WorkerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485766D6253668DB00863EF8 /* WorkerTableViewCell.xib */; };
+		485766DF2536741F00863EF8 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485766DD2536741F00863EF8 /* CompanyTableViewCell.swift */; };
+		485766E02536741F00863EF8 /* CompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485766DE2536741F00863EF8 /* CompanyTableViewCell.xib */; };
+		485766E3253677A000863EF8 /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485766E1253677A000863EF8 /* PaymentTableViewCell.swift */; };
+		485766E4253677A000863EF8 /* PaymentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485766E2253677A000863EF8 /* PaymentTableViewCell.xib */; };
+		485766E72536EE5B00863EF8 /* ContractTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485766E52536EE5B00863EF8 /* ContractTableViewCell.swift */; };
+		485766E82536EE5B00863EF8 /* ContractTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485766E62536EE5B00863EF8 /* ContractTableViewCell.xib */; };
 		485C17B2252BCC7300FEE7D3 /* AgentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C17B1252BCC7300FEE7D3 /* AgentViewController.swift */; };
 		485C17B4252C79F200FEE7D3 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C17B3252C79F200FEE7D3 /* DataBase.swift */; };
+		485C17B6252C97F200FEE7D3 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C17B5252C97F200FEE7D3 /* CompanyViewController.swift */; };
 		48CA522D252B263A0055D430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA522C252B263A0055D430 /* AppDelegate.swift */; };
 		48CA522F252B263A0055D430 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA522E252B263A0055D430 /* SceneDelegate.swift */; };
 		48CA5231252B263A0055D430 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA5230252B263A0055D430 /* ViewController.swift */; };
@@ -63,9 +89,35 @@
 		084203401E2C34A081DA6AA1 /* Pods-FINAL_SMTH-FINAL_SMTHUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FINAL_SMTH-FINAL_SMTHUITests.debug.xcconfig"; path = "Target Support Files/Pods-FINAL_SMTH-FINAL_SMTHUITests/Pods-FINAL_SMTH-FINAL_SMTHUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		17554B7DDF7C505761F630B8 /* Pods-FINAL_SMTH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FINAL_SMTH.debug.xcconfig"; path = "Target Support Files/Pods-FINAL_SMTH/Pods-FINAL_SMTH.debug.xcconfig"; sourceTree = "<group>"; };
 		263F8784549352A4279817F6 /* Pods_FINAL_SMTH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FINAL_SMTH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		484A2F7825384F440069E8AB /* CompanyDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDateViewController.swift; sourceTree = "<group>"; };
+		484C88C5253874E200D3C831 /* AgentDateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDateTableViewCell.swift; sourceTree = "<group>"; };
+		484C88C6253874E200D3C831 /* AgentDateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentDateTableViewCell.xib; sourceTree = "<group>"; };
+		484C88C92538B1FC00D3C831 /* ContractDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDateViewController.swift; sourceTree = "<group>"; };
+		484C89092538C32500D3C831 /* ContractDateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDateTableViewCell.swift; sourceTree = "<group>"; };
+		484C890A2538C32500D3C831 /* ContractDateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractDateTableViewCell.xib; sourceTree = "<group>"; };
+		484C890F2538ED0A00D3C831 /* PaymentDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDateViewController.swift; sourceTree = "<group>"; };
+		484C89112538EF5400D3C831 /* PaymentDateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDateTableViewCell.swift; sourceTree = "<group>"; };
+		484C89122538EF5400D3C831 /* PaymentDateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentDateTableViewCell.xib; sourceTree = "<group>"; };
+		484D8F7F2537027B00431EA9 /* AgentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentTableViewCell.swift; sourceTree = "<group>"; };
+		484D8F802537027B00431EA9 /* AgentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentTableViewCell.xib; sourceTree = "<group>"; };
+		485766C62536525600863EF8 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		485766C82536588200863EF8 /* WorkerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerTableViewController.swift; sourceTree = "<group>"; };
+		485766CA2536589000863EF8 /* AgentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentTableViewController.swift; sourceTree = "<group>"; };
+		485766CC2536589F00863EF8 /* PaymentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewController.swift; sourceTree = "<group>"; };
+		485766CE253658AE00863EF8 /* CompanyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewController.swift; sourceTree = "<group>"; };
+		485766D0253658BB00863EF8 /* ContractTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractTableViewController.swift; sourceTree = "<group>"; };
+		485766D5253668DB00863EF8 /* WorkerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerTableViewCell.swift; sourceTree = "<group>"; };
+		485766D6253668DB00863EF8 /* WorkerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkerTableViewCell.xib; sourceTree = "<group>"; };
+		485766DD2536741F00863EF8 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		485766DE2536741F00863EF8 /* CompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTableViewCell.xib; sourceTree = "<group>"; };
+		485766E1253677A000863EF8 /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
+		485766E2253677A000863EF8 /* PaymentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentTableViewCell.xib; sourceTree = "<group>"; };
+		485766E52536EE5B00863EF8 /* ContractTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractTableViewCell.swift; sourceTree = "<group>"; };
+		485766E62536EE5B00863EF8 /* ContractTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractTableViewCell.xib; sourceTree = "<group>"; };
 		485C17B1252BCC7300FEE7D3 /* AgentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentViewController.swift; sourceTree = "<group>"; };
-		485C17B3252C79F200FEE7D3 /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = SOURCE_ROOT; };
-		48CA5229252B263A0055D430 /* FINAL_SMTH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FINAL_SMTH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		485C17B3252C79F200FEE7D3 /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataBase.swift; path = FINAL_SMTH/Model/DataBase.swift; sourceTree = SOURCE_ROOT; };
+		485C17B5252C97F200FEE7D3 /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		48CA5229252B263A0055D430 /* KBE_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBE_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CA522C252B263A0055D430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48CA522E252B263A0055D430 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		48CA5230252B263A0055D430 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +132,7 @@
 		48CA524E252B263D0055D430 /* FINAL_SMTHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FINAL_SMTHUITests.swift; sourceTree = "<group>"; };
 		48CA5250252B263D0055D430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48CA5278252B38DE0055D430 /* ManipulateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManipulateViewController.swift; sourceTree = "<group>"; };
-		48CA527E252B40340055D430 /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Worker.swift; path = ../Worker.swift; sourceTree = "<group>"; };
+		48CA527E252B40340055D430 /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 		48CA5281252B6AAB0055D430 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		48CA528A252B6AF00055D430 /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
 		48CA528C252B6AFC0055D430 /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
@@ -133,6 +185,150 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		484C89152538FC2200D3C831 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				484C891F2538FE1200D3C831 /* ManipulateViewControllers */,
+				484C891E2538FDD900D3C831 /* AgentDateViewControllers */,
+				484C891D2538FDB300D3C831 /* ContractDateViewControllers */,
+				484C891C2538FD7F00D3C831 /* PaymentDateViewControllers */,
+				48CA5230252B263A0055D430 /* ViewController.swift */,
+				485766D225365B7100863EF8 /* TablesViewControllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		484C89162538FC4900D3C831 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				485C17B3252C79F200FEE7D3 /* DataBase.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		484C89172538FC8400D3C831 /* PaymentTable */ = {
+			isa = PBXGroup;
+			children = (
+				485766CC2536589F00863EF8 /* PaymentTableViewController.swift */,
+				485766E1253677A000863EF8 /* PaymentTableViewCell.swift */,
+				485766E2253677A000863EF8 /* PaymentTableViewCell.xib */,
+			);
+			path = PaymentTable;
+			sourceTree = "<group>";
+		};
+		484C89182538FCA200D3C831 /* ContractTable */ = {
+			isa = PBXGroup;
+			children = (
+				485766D0253658BB00863EF8 /* ContractTableViewController.swift */,
+				485766E52536EE5B00863EF8 /* ContractTableViewCell.swift */,
+				485766E62536EE5B00863EF8 /* ContractTableViewCell.xib */,
+			);
+			path = ContractTable;
+			sourceTree = "<group>";
+		};
+		484C89192538FCC100D3C831 /* CompanyTable */ = {
+			isa = PBXGroup;
+			children = (
+				485766CE253658AE00863EF8 /* CompanyTableViewController.swift */,
+				485766DD2536741F00863EF8 /* CompanyTableViewCell.swift */,
+				485766DE2536741F00863EF8 /* CompanyTableViewCell.xib */,
+			);
+			path = CompanyTable;
+			sourceTree = "<group>";
+		};
+		484C891A2538FCDB00D3C831 /* WorkerTable */ = {
+			isa = PBXGroup;
+			children = (
+				485766C82536588200863EF8 /* WorkerTableViewController.swift */,
+				485766D5253668DB00863EF8 /* WorkerTableViewCell.swift */,
+				485766D6253668DB00863EF8 /* WorkerTableViewCell.xib */,
+			);
+			path = WorkerTable;
+			sourceTree = "<group>";
+		};
+		484C891B2538FCEF00D3C831 /* AgentTable */ = {
+			isa = PBXGroup;
+			children = (
+				485766CA2536589000863EF8 /* AgentTableViewController.swift */,
+				484D8F7F2537027B00431EA9 /* AgentTableViewCell.swift */,
+				484D8F802537027B00431EA9 /* AgentTableViewCell.xib */,
+			);
+			path = AgentTable;
+			sourceTree = "<group>";
+		};
+		484C891C2538FD7F00D3C831 /* PaymentDateViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				484C890F2538ED0A00D3C831 /* PaymentDateViewController.swift */,
+				484C89112538EF5400D3C831 /* PaymentDateTableViewCell.swift */,
+				484C89122538EF5400D3C831 /* PaymentDateTableViewCell.xib */,
+			);
+			path = PaymentDateViewControllers;
+			sourceTree = "<group>";
+		};
+		484C891D2538FDB300D3C831 /* ContractDateViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				484C88C92538B1FC00D3C831 /* ContractDateViewController.swift */,
+				484C89092538C32500D3C831 /* ContractDateTableViewCell.swift */,
+				484C890A2538C32500D3C831 /* ContractDateTableViewCell.xib */,
+			);
+			path = ContractDateViewControllers;
+			sourceTree = "<group>";
+		};
+		484C891E2538FDD900D3C831 /* AgentDateViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				484A2F7825384F440069E8AB /* CompanyDateViewController.swift */,
+				484C88C5253874E200D3C831 /* AgentDateTableViewCell.swift */,
+				484C88C6253874E200D3C831 /* AgentDateTableViewCell.xib */,
+			);
+			path = AgentDateViewControllers;
+			sourceTree = "<group>";
+		};
+		484C891F2538FE1200D3C831 /* ManipulateViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				48CA5278252B38DE0055D430 /* ManipulateViewController.swift */,
+				487630D125373CD9001873CA /* FormViewControllers */,
+			);
+			path = ManipulateViewControllers;
+			sourceTree = "<group>";
+		};
+		485766D225365B7100863EF8 /* TablesViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				484C891B2538FCEF00D3C831 /* AgentTable */,
+				484C891A2538FCDB00D3C831 /* WorkerTable */,
+				484C89192538FCC100D3C831 /* CompanyTable */,
+				484C89182538FCA200D3C831 /* ContractTable */,
+				484C89172538FC8400D3C831 /* PaymentTable */,
+			);
+			path = TablesViewControllers;
+			sourceTree = "<group>";
+		};
+		487630D025373CB7001873CA /* DataUnits */ = {
+			isa = PBXGroup;
+			children = (
+				48CA528C252B6AFC0055D430 /* Contract.swift */,
+				485766C62536525600863EF8 /* Payment.swift */,
+				48CA528A252B6AF00055D430 /* Agent.swift */,
+				48CA5281252B6AAB0055D430 /* Company.swift */,
+				48CA527E252B40340055D430 /* Worker.swift */,
+			);
+			path = DataUnits;
+			sourceTree = "<group>";
+		};
+		487630D125373CD9001873CA /* FormViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				485C17B1252BCC7300FEE7D3 /* AgentViewController.swift */,
+				485C17B5252C97F200FEE7D3 /* CompanyViewController.swift */,
+				48CA529C252BBDA80055D430 /* WorkerViewController.swift */,
+			);
+			path = FormViewControllers;
+			sourceTree = "<group>";
+		};
 		48CA5220252B26390055D430 = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +344,7 @@
 		48CA522A252B263A0055D430 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48CA5229252B263A0055D430 /* FINAL_SMTH.app */,
+				48CA5229252B263A0055D430 /* KBE_2.app */,
 				48CA523F252B263D0055D430 /* FINAL_SMTHTests.xctest */,
 				48CA524A252B263D0055D430 /* FINAL_SMTHUITests.xctest */,
 			);
@@ -158,18 +354,12 @@
 		48CA522B252B263A0055D430 /* FINAL_SMTH */ = {
 			isa = PBXGroup;
 			children = (
+				487630D025373CB7001873CA /* DataUnits */,
+				484C89162538FC4900D3C831 /* Model */,
+				484C89152538FC2200D3C831 /* ViewControllers */,
 				48CA522C252B263A0055D430 /* AppDelegate.swift */,
-				48CA527E252B40340055D430 /* Worker.swift */,
 				48CA522E252B263A0055D430 /* SceneDelegate.swift */,
-				48CA5230252B263A0055D430 /* ViewController.swift */,
 				48CA5232252B263A0055D430 /* Main.storyboard */,
-				485C17B1252BCC7300FEE7D3 /* AgentViewController.swift */,
-				485C17B3252C79F200FEE7D3 /* DataBase.swift */,
-				48CA529C252BBDA80055D430 /* WorkerViewController.swift */,
-				48CA5281252B6AAB0055D430 /* Company.swift */,
-				48CA528A252B6AF00055D430 /* Agent.swift */,
-				48CA528C252B6AFC0055D430 /* Contract.swift */,
-				48CA5278252B38DE0055D430 /* ManipulateViewController.swift */,
 				48CA5235252B263C0055D430 /* Assets.xcassets */,
 				48CA5237252B263C0055D430 /* LaunchScreen.storyboard */,
 				48CA523A252B263C0055D430 /* Info.plist */,
@@ -225,7 +415,7 @@
 			);
 			name = FINAL_SMTH;
 			productName = FINAL_SMTH;
-			productReference = 48CA5229252B263A0055D430 /* FINAL_SMTH.app */;
+			productReference = 48CA5229252B263A0055D430 /* KBE_2.app */;
 			productType = "com.apple.product-type.application";
 		};
 		48CA523E252B263D0055D430 /* FINAL_SMTHTests */ = {
@@ -290,7 +480,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 48CA5224252B26390055D430 /* Build configuration list for PBXProject "FINAL_SMTH" */;
+			buildConfigurationList = 48CA5224252B26390055D430 /* Build configuration list for PBXProject "KBE_2" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -316,8 +506,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				48CA5239252B263C0055D430 /* LaunchScreen.storyboard in Resources */,
+				484C890C2538C32500D3C831 /* ContractDateTableViewCell.xib in Resources */,
+				484D8F822537027B00431EA9 /* AgentTableViewCell.xib in Resources */,
+				485766D8253668DB00863EF8 /* WorkerTableViewCell.xib in Resources */,
 				48CA5236252B263C0055D430 /* Assets.xcassets in Resources */,
+				485766E82536EE5B00863EF8 /* ContractTableViewCell.xib in Resources */,
+				485766E02536741F00863EF8 /* CompanyTableViewCell.xib in Resources */,
+				484C89142538EF5400D3C831 /* PaymentDateTableViewCell.xib in Resources */,
+				485766E4253677A000863EF8 /* PaymentTableViewCell.xib in Resources */,
 				48CA5234252B263A0055D430 /* Main.storyboard in Resources */,
+				484C88C8253874E200D3C831 /* AgentDateTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,17 +643,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485766CD2536589F00863EF8 /* PaymentTableViewController.swift in Sources */,
+				484C89132538EF5400D3C831 /* PaymentDateTableViewCell.swift in Sources */,
+				484C89102538ED0A00D3C831 /* PaymentDateViewController.swift in Sources */,
 				485C17B2252BCC7300FEE7D3 /* AgentViewController.swift in Sources */,
 				48CA528B252B6AF00055D430 /* Agent.swift in Sources */,
+				485766CB2536589000863EF8 /* AgentTableViewController.swift in Sources */,
+				484C88CA2538B1FC00D3C831 /* ContractDateViewController.swift in Sources */,
+				485766E72536EE5B00863EF8 /* ContractTableViewCell.swift in Sources */,
 				48CA527F252B40340055D430 /* Worker.swift in Sources */,
+				485766CF253658AE00863EF8 /* CompanyTableViewController.swift in Sources */,
+				485766C92536588200863EF8 /* WorkerTableViewController.swift in Sources */,
+				485766D7253668DB00863EF8 /* WorkerTableViewCell.swift in Sources */,
 				48CA529D252BBDA80055D430 /* WorkerViewController.swift in Sources */,
+				485766DF2536741F00863EF8 /* CompanyTableViewCell.swift in Sources */,
 				48CA5279252B38DE0055D430 /* ManipulateViewController.swift in Sources */,
+				485766E3253677A000863EF8 /* PaymentTableViewCell.swift in Sources */,
 				48CA5231252B263A0055D430 /* ViewController.swift in Sources */,
 				485C17B4252C79F200FEE7D3 /* DataBase.swift in Sources */,
+				484D8F812537027B00431EA9 /* AgentTableViewCell.swift in Sources */,
 				48CA522D252B263A0055D430 /* AppDelegate.swift in Sources */,
+				485766C72536525600863EF8 /* Payment.swift in Sources */,
+				484C88C7253874E200D3C831 /* AgentDateTableViewCell.swift in Sources */,
+				485C17B6252C97F200FEE7D3 /* CompanyViewController.swift in Sources */,
 				48CA522F252B263A0055D430 /* SceneDelegate.swift in Sources */,
+				484C890B2538C32500D3C831 /* ContractDateTableViewCell.swift in Sources */,
 				48CA5282252B6AAB0055D430 /* Company.swift in Sources */,
 				48CA528D252B6AFC0055D430 /* Contract.swift in Sources */,
+				485766D1253658BB00863EF8 /* ContractTableViewController.swift in Sources */,
+				484A2F7925384F440069E8AB /* CompanyDateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,7 +852,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "alina.FINAL-SMTH";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KBE_2;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -654,7 +870,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "alina.FINAL-SMTH";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KBE_2;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -747,7 +963,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		48CA5224252B26390055D430 /* Build configuration list for PBXProject "FINAL_SMTH" */ = {
+		48CA5224252B26390055D430 /* Build configuration list for PBXProject "KBE_2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48CA5251252B263D0055D430 /* Debug */,
