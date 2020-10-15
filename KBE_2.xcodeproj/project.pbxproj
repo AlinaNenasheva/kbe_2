@@ -42,8 +42,6 @@
 		48CA5234252B263A0055D430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CA5232252B263A0055D430 /* Main.storyboard */; };
 		48CA5236252B263C0055D430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48CA5235252B263C0055D430 /* Assets.xcassets */; };
 		48CA5239252B263C0055D430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CA5237252B263C0055D430 /* LaunchScreen.storyboard */; };
-		48CA5244252B263D0055D430 /* FINAL_SMTHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA5243252B263D0055D430 /* FINAL_SMTHTests.swift */; };
-		48CA524F252B263D0055D430 /* FINAL_SMTHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA524E252B263D0055D430 /* FINAL_SMTHUITests.swift */; };
 		48CA5279252B38DE0055D430 /* ManipulateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA5278252B38DE0055D430 /* ManipulateViewController.swift */; };
 		48CA527F252B40340055D430 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA527E252B40340055D430 /* Worker.swift */; };
 		48CA5282252B6AAB0055D430 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA5281252B6AAB0055D430 /* Company.swift */; };
@@ -126,11 +124,7 @@
 		48CA5238252B263C0055D430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48CA523A252B263C0055D430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48CA523F252B263D0055D430 /* FINAL_SMTHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FINAL_SMTHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		48CA5243252B263D0055D430 /* FINAL_SMTHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FINAL_SMTHTests.swift; sourceTree = "<group>"; };
-		48CA5245252B263D0055D430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48CA524A252B263D0055D430 /* FINAL_SMTHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FINAL_SMTHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		48CA524E252B263D0055D430 /* FINAL_SMTHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FINAL_SMTHUITests.swift; sourceTree = "<group>"; };
-		48CA5250252B263D0055D430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48CA5278252B38DE0055D430 /* ManipulateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManipulateViewController.swift; sourceTree = "<group>"; };
 		48CA527E252B40340055D430 /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 		48CA5281252B6AAB0055D430 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -333,8 +327,6 @@
 			isa = PBXGroup;
 			children = (
 				48CA522B252B263A0055D430 /* FINAL_SMTH */,
-				48CA5242252B263D0055D430 /* FINAL_SMTHTests */,
-				48CA524D252B263D0055D430 /* FINAL_SMTHUITests */,
 				48CA522A252B263A0055D430 /* Products */,
 				48CA5274252B297B0055D430 /* Frameworks */,
 				3219FCF21E0D94BDA63E2B15 /* Pods */,
@@ -365,24 +357,6 @@
 				48CA523A252B263C0055D430 /* Info.plist */,
 			);
 			path = FINAL_SMTH;
-			sourceTree = "<group>";
-		};
-		48CA5242252B263D0055D430 /* FINAL_SMTHTests */ = {
-			isa = PBXGroup;
-			children = (
-				48CA5243252B263D0055D430 /* FINAL_SMTHTests.swift */,
-				48CA5245252B263D0055D430 /* Info.plist */,
-			);
-			path = FINAL_SMTHTests;
-			sourceTree = "<group>";
-		};
-		48CA524D252B263D0055D430 /* FINAL_SMTHUITests */ = {
-			isa = PBXGroup;
-			children = (
-				48CA524E252B263D0055D430 /* FINAL_SMTHUITests.swift */,
-				48CA5250252B263D0055D430 /* Info.plist */,
-			);
-			path = FINAL_SMTHUITests;
 			sourceTree = "<group>";
 		};
 		48CA5274252B297B0055D430 /* Frameworks */ = {
@@ -679,7 +653,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48CA5244252B263D0055D430 /* FINAL_SMTHTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,7 +660,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48CA524F252B263D0055D430 /* FINAL_SMTHUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

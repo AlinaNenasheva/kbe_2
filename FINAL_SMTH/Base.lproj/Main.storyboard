@@ -16,36 +16,71 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfs-X2-cyn">
-                                <rect key="frame" x="165" y="134" width="84" height="30"/>
+                                <rect key="frame" x="158" y="124" width="98" height="33"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Show tables"/>
                                 <connections>
                                     <action selector="showTablesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uf8-jO-jAY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16V-Um-n2X">
-                                <rect key="frame" x="146" y="254" width="122" height="30"/>
+                                <rect key="frame" x="136" y="237" width="142" height="33"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Manipulate tables"/>
                                 <connections>
                                     <action selector="manipulateTablesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vHB-o9-e4S"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPb-JF-BTS">
-                                <rect key="frame" x="112" y="374" width="190" height="30"/>
-                                <state key="normal" title="Current agent- current date"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPb-JF-BTS">
+                                <rect key="frame" x="111" y="350" width="193" height="69"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">Show list of companies
+and contracts on current 
+date and company</string>
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="HelveticaNeue-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="currentAgentDateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SRJ-8l-XYa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NA6-RQ-6DK">
-                                <rect key="frame" x="99.5" y="494" width="215" height="30"/>
-                                <state key="normal" title="Show list of agents that signed "/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="NA6-RQ-6DK">
+                                <rect key="frame" x="111" y="499" width="191" height="73"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal">
+                                    <string key="title">Show list of signed
+ agents on current
+ date and company</string>
+                                </state>
                                 <connections>
                                     <action selector="currentCompanyDateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Od2-rt-s7j"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEb-Lq-l3X">
-                                <rect key="frame" x="121" y="614" width="172" height="30"/>
-                                <state key="normal" title="Payments-category-date"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zEb-Lq-l3X">
+                                <rect key="frame" x="138" y="651" width="138" height="63"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">Show list of payments 
+on current date</string>
+                                            <attributes>
+                                                <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="currentDatePaymentButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WPn-Eu-79M"/>
                                 </connections>
@@ -53,16 +88,21 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="nfs-X2-cyn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="5vR-TU-TEK"/>
-                            <constraint firstItem="zEb-Lq-l3X" firstAttribute="centerX" secondItem="nfs-X2-cyn" secondAttribute="centerX" id="6lY-SG-ZDx"/>
-                            <constraint firstItem="zEb-Lq-l3X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9l3-KG-f1S"/>
-                            <constraint firstItem="zEb-Lq-l3X" firstAttribute="centerX" secondItem="16V-Um-n2X" secondAttribute="centerX" id="CG6-d7-XgW"/>
-                            <constraint firstItem="NA6-RQ-6DK" firstAttribute="top" secondItem="pPb-JF-BTS" secondAttribute="bottom" constant="90" id="CZi-DY-xqz"/>
-                            <constraint firstItem="zEb-Lq-l3X" firstAttribute="centerX" secondItem="pPb-JF-BTS" secondAttribute="centerX" id="Ndh-4C-6XG"/>
-                            <constraint firstItem="pPb-JF-BTS" firstAttribute="top" secondItem="16V-Um-n2X" secondAttribute="bottom" constant="90" id="OYQ-5o-7sT"/>
-                            <constraint firstItem="zEb-Lq-l3X" firstAttribute="top" secondItem="NA6-RQ-6DK" secondAttribute="bottom" constant="90" id="UCa-EY-qnF"/>
-                            <constraint firstItem="16V-Um-n2X" firstAttribute="top" secondItem="nfs-X2-cyn" secondAttribute="bottom" constant="90" id="aEE-Qu-2KX"/>
-                            <constraint firstItem="zEb-Lq-l3X" firstAttribute="centerX" secondItem="NA6-RQ-6DK" secondAttribute="centerX" id="pLl-0s-UGK"/>
+                            <constraint firstItem="zEb-Lq-l3X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="BsK-Hz-S72"/>
+                            <constraint firstItem="nfs-X2-cyn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="CqC-Cn-D7U"/>
+                            <constraint firstItem="pPb-JF-BTS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="Hnx-AN-aKE"/>
+                            <constraint firstItem="16V-Um-n2X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="M4e-oj-Cw3"/>
+                            <constraint firstItem="16V-Um-n2X" firstAttribute="top" secondItem="nfs-X2-cyn" secondAttribute="bottom" constant="80" id="Mr9-Zg-6Cu"/>
+                            <constraint firstItem="NA6-RQ-6DK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="SUF-aK-TL9"/>
+                            <constraint firstItem="nfs-X2-cyn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="SVq-Dw-YLc"/>
+                            <constraint firstItem="zEb-Lq-l3X" firstAttribute="top" secondItem="NA6-RQ-6DK" secondAttribute="bottom" constant="80" id="igw-ON-dE7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pPb-JF-BTS" secondAttribute="trailing" constant="110" id="jhL-8V-006"/>
+                            <constraint firstItem="NA6-RQ-6DK" firstAttribute="top" secondItem="pPb-JF-BTS" secondAttribute="bottom" constant="80" id="lYx-bZ-eJ2"/>
+                            <constraint firstItem="pPb-JF-BTS" firstAttribute="top" secondItem="16V-Um-n2X" secondAttribute="bottom" constant="80" id="mX0-vT-K46"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zEb-Lq-l3X" secondAttribute="trailing" constant="138" id="pCe-sG-jDb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="16V-Um-n2X" secondAttribute="trailing" constant="136" id="s2q-Wc-tkU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nfs-X2-cyn" secondAttribute="trailing" constant="158" id="vl7-2g-jVY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NA6-RQ-6DK" secondAttribute="trailing" constant="112" id="zvl-a6-Wtc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -76,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="105"/>
+            <point key="canvasLocation" x="137.68115942028987" y="104.46428571428571"/>
         </scene>
         <!--Worker Table View Controller-->
         <scene sceneID="2Zz-pQ-RZi">
@@ -136,8 +176,10 @@
                                     <action selector="companyCodeTextField:" destination="2yu-iA-TLt" eventType="editingDidEnd" id="98L-rn-3Jb"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNW-Mm-QYJ">
-                                <rect key="frame" x="183" y="361" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNW-Mm-QYJ">
+                                <rect key="frame" x="181" y="361" width="36" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" title="Find"/>
                                 <connections>
                                     <action selector="findButtonPressed:" destination="2yu-iA-TLt" eventType="touchUpInside" id="2L4-UO-DVi"/>
@@ -162,7 +204,7 @@
                             <constraint firstItem="9X3-LC-Xwk" firstAttribute="leading" secondItem="NaP-Dt-w8a" secondAttribute="leading" constant="137" id="Evq-bf-BiA"/>
                             <constraint firstItem="pwC-cT-PO5" firstAttribute="top" secondItem="emo-IK-KDs" secondAttribute="bottom" constant="30" id="Z7v-AC-6nP"/>
                             <constraint firstItem="QFH-Ye-rbK" firstAttribute="trailing" secondItem="NaP-Dt-w8a" secondAttribute="trailing" id="ZBR-yV-5As"/>
-                            <constraint firstItem="ZNW-Mm-QYJ" firstAttribute="leading" secondItem="NaP-Dt-w8a" secondAttribute="leading" constant="183" id="ZGH-NF-XNs"/>
+                            <constraint firstItem="ZNW-Mm-QYJ" firstAttribute="leading" secondItem="NaP-Dt-w8a" secondAttribute="leading" constant="181" id="ZGH-NF-XNs"/>
                             <constraint firstItem="emo-IK-KDs" firstAttribute="top" secondItem="NaP-Dt-w8a" secondAttribute="top" id="eBw-eY-gLO"/>
                             <constraint firstItem="pwC-cT-PO5" firstAttribute="leading" secondItem="NaP-Dt-w8a" secondAttribute="leading" constant="139" id="eui-0Z-953"/>
                             <constraint firstItem="QFH-Ye-rbK" firstAttribute="bottom" secondItem="NaP-Dt-w8a" secondAttribute="bottom" id="fz9-ir-xJf"/>
@@ -182,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dlx-WJ-8G9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-745" y="113"/>
+            <point key="canvasLocation" x="-746.37681159420299" y="112.5"/>
         </scene>
         <!--Manipulate View Controller-->
         <scene sceneID="svt-qB-D4a">
@@ -193,45 +235,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10h-K2-2FS">
-                                <rect key="frame" x="139" y="274" width="143" height="30"/>
+                                <rect key="frame" x="125" y="237" width="165" height="33"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Manipulate company"/>
                                 <connections>
                                     <action selector="manipulateCompanyButtonPressed:" destination="eX5-Bx-xiB" eventType="touchUpInside" id="vhz-Q5-Owj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGS-Up-Og9">
-                                <rect key="frame" x="180.5" y="534" width="53" height="30"/>
+                                <rect key="frame" x="176.5" y="463" width="61" height="33"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="&lt;&lt;Back"/>
                                 <connections>
                                     <action selector="backToMenuButtonPressed:" destination="eX5-Bx-xiB" eventType="touchUpInside" id="nfk-rh-tXp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpB-eb-qKp">
-                                <rect key="frame" x="147.5" y="144" width="126" height="30"/>
-                                <state key="normal" title="Manipulate worker"/>
-                                <connections>
-                                    <action selector="manipulateWorkerButtonPressed:" destination="eX5-Bx-xiB" eventType="touchUpInside" id="qpa-YG-j4j"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9U5-12-sCW">
-                                <rect key="frame" x="147" y="406" width="134" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9U5-12-sCW">
+                                <rect key="frame" x="138" y="350" width="137" height="33"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Manipulate agent"/>
                                 <connections>
                                     <action selector="manipulateAgentButtonPressed:" destination="eX5-Bx-xiB" eventType="touchUpInside" id="zwg-3e-Ntn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpB-eb-qKp">
+                                <rect key="frame" x="134" y="124" width="146" height="33"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Manipulate worker"/>
+                                <connections>
+                                    <action selector="manipulateWorkerButtonPressed:" destination="eX5-Bx-xiB" eventType="touchUpInside" id="qpa-YG-j4j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="10h-K2-2FS" firstAttribute="leading" secondItem="EKA-gj-r0G" secondAttribute="leading" constant="139" id="0bw-Hr-PKd"/>
-                            <constraint firstItem="9U5-12-sCW" firstAttribute="centerX" secondItem="NGS-Up-Og9" secondAttribute="centerX" id="1AM-MK-dpi"/>
-                            <constraint firstItem="10h-K2-2FS" firstAttribute="centerX" secondItem="PpB-eb-qKp" secondAttribute="centerX" id="4Sj-Dt-hkq"/>
-                            <constraint firstItem="PpB-eb-qKp" firstAttribute="top" secondItem="EKA-gj-r0G" secondAttribute="top" constant="100" id="9Pr-JK-WdR"/>
-                            <constraint firstItem="9U5-12-sCW" firstAttribute="top" secondItem="10h-K2-2FS" secondAttribute="bottom" constant="100" id="Dza-hZ-6jP"/>
-                            <constraint firstItem="NGS-Up-Og9" firstAttribute="top" secondItem="9U5-12-sCW" secondAttribute="bottom" constant="100" id="S6b-Qh-1O8"/>
-                            <constraint firstItem="9U5-12-sCW" firstAttribute="leading" secondItem="EKA-gj-r0G" secondAttribute="leading" constant="147" id="ZtA-4i-HfV"/>
-                            <constraint firstItem="NGS-Up-Og9" firstAttribute="centerX" secondItem="hSo-XS-djR" secondAttribute="centerX" id="b0e-sF-dvJ"/>
-                            <constraint firstItem="10h-K2-2FS" firstAttribute="top" secondItem="PpB-eb-qKp" secondAttribute="bottom" constant="100" id="xPf-gR-VCm"/>
+                            <constraint firstItem="EKA-gj-r0G" firstAttribute="trailing" secondItem="PpB-eb-qKp" secondAttribute="trailing" constant="134" id="06P-ck-X9N"/>
+                            <constraint firstItem="10h-K2-2FS" firstAttribute="top" secondItem="PpB-eb-qKp" secondAttribute="bottom" constant="80" id="1wU-9h-thg"/>
+                            <constraint firstItem="10h-K2-2FS" firstAttribute="leading" secondItem="EKA-gj-r0G" secondAttribute="leading" constant="125" id="CEr-t1-km8"/>
+                            <constraint firstItem="EKA-gj-r0G" firstAttribute="trailing" secondItem="9U5-12-sCW" secondAttribute="trailing" constant="139" id="JDU-Oa-rG8"/>
+                            <constraint firstItem="PpB-eb-qKp" firstAttribute="top" secondItem="EKA-gj-r0G" secondAttribute="top" constant="80" id="PkV-Kj-z5p"/>
+                            <constraint firstItem="9U5-12-sCW" firstAttribute="leading" secondItem="EKA-gj-r0G" secondAttribute="leading" constant="138" id="SlX-XM-Lbb"/>
+                            <constraint firstItem="9U5-12-sCW" firstAttribute="top" secondItem="10h-K2-2FS" secondAttribute="bottom" constant="80" id="Sqe-ED-dhc"/>
+                            <constraint firstItem="PpB-eb-qKp" firstAttribute="leading" secondItem="EKA-gj-r0G" secondAttribute="leading" constant="134" id="Vnv-n2-tbD"/>
+                            <constraint firstItem="NGS-Up-Og9" firstAttribute="leading" secondItem="EKA-gj-r0G" secondAttribute="leading" constant="176.5" id="pv3-SE-gxO"/>
+                            <constraint firstItem="NGS-Up-Og9" firstAttribute="top" secondItem="9U5-12-sCW" secondAttribute="bottom" constant="80" id="r1G-gR-eef"/>
+                            <constraint firstItem="EKA-gj-r0G" firstAttribute="trailing" secondItem="NGS-Up-Og9" secondAttribute="trailing" constant="176.5" id="ved-1O-DW4"/>
+                            <constraint firstItem="EKA-gj-r0G" firstAttribute="trailing" secondItem="10h-K2-2FS" secondAttribute="trailing" constant="124" id="xFp-ik-k7o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EKA-gj-r0G"/>
                     </view>
@@ -296,6 +349,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm5-2m-4uo">
                                 <rect key="frame" x="181" y="798" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="&lt;&lt;Back"/>
                                 <connections>
                                     <action selector="backToMenuButtonPressed:" destination="eX5-Bx-xiB" eventType="touchUpInside" id="fJq-gr-qB6"/>
@@ -305,6 +359,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di6-h7-ubm">
                                 <rect key="frame" x="192" y="745" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addWorkerButtonPressed:" destination="p0m-fv-7cA" eventType="touchUpInside" id="BwR-DG-D3u"/>
@@ -313,6 +368,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wke-3o-DMV">
                                 <rect key="frame" x="187" y="699" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Delete"/>
                                 <connections>
                                     <action selector="deleteWorkerButtonPressed:" destination="p0m-fv-7cA" eventType="touchUpInside" id="YRb-94-Gee"/>
@@ -321,6 +377,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfz-4j-Mb5">
                                 <rect key="frame" x="192" y="648" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Edit"/>
                                 <connections>
                                     <action selector="editWorkerButtonPressed:" destination="p0m-fv-7cA" eventType="touchUpInside" id="skR-XT-lf1"/>
@@ -390,8 +447,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpD-2G-i5B">
-                                <rect key="frame" x="192" y="745" width="30" height="30"/>
+                                <rect key="frame" x="194" y="747" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addAgentButtonPressed:" destination="si4-tB-oUl" eventType="touchUpInside" id="9Qr-b3-TWb"/>
@@ -400,6 +458,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNc-GZ-4Zl">
                                 <rect key="frame" x="187" y="699" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Delete"/>
                                 <connections>
                                     <action selector="deleteAgentButtonPressed:" destination="si4-tB-oUl" eventType="touchUpInside" id="a3D-4O-3nz"/>
@@ -408,18 +467,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cld-u5-liz">
                                 <rect key="frame" x="192" y="648" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Edit"/>
                                 <connections>
                                     <action selector="editAgentButtonPressed:" destination="si4-tB-oUl" eventType="touchUpInside" id="PKd-lU-0T1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFR-id-6zx">
-                                <rect key="frame" x="179" y="791" width="53" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt;&lt;Back"/>
-                                <connections>
-                                    <action selector="backToMenuButtonPressed:" destination="si4-tB-oUl" eventType="touchUpInside" id="Hgt-9K-QSw"/>
-                                    <action selector="backToMenuButtonPressed:" destination="eX5-Bx-xiB" eventType="touchUpInside" id="rBy-GE-0iu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNR-L7-B9a">
@@ -448,6 +499,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFR-id-6zx">
+                                <rect key="frame" x="183" y="798" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="&lt;&lt;Back"/>
+                                <connections>
+                                    <action selector="backToMenuButtonPressed:" destination="si4-tB-oUl" eventType="touchUpInside" id="Hgt-9K-QSw"/>
+                                    <action selector="backToMenuButtonPressed:" destination="eX5-Bx-xiB" eventType="touchUpInside" id="rBy-GE-0iu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="0ac-CL-Pag"/>
@@ -514,6 +575,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRc-rj-ILl">
                                 <rect key="frame" x="181" y="798" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="&lt;&lt;Back"/>
                                 <connections>
                                     <action selector="backToMenuButtonPressed:" destination="3eh-36-LB9" eventType="touchUpInside" id="mft-ch-qkr"/>
@@ -523,6 +585,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYc-op-6Kp">
                                 <rect key="frame" x="192" y="745" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addCompanyButtonPressed:" destination="3eh-36-LB9" eventType="touchUpInside" id="EiF-CG-Sij"/>
@@ -531,6 +594,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeV-I9-c0u">
                                 <rect key="frame" x="187" y="699" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Delete"/>
                                 <connections>
                                     <action selector="deleteCompanyButtonPressed:" destination="3eh-36-LB9" eventType="touchUpInside" id="Zbk-YI-kp3"/>
@@ -539,6 +603,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjB-1v-O6A">
                                 <rect key="frame" x="192" y="648" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Edit"/>
                                 <connections>
                                     <action selector="editCompanyButtonPressed:" destination="3eh-36-LB9" eventType="touchUpInside" id="uM2-oA-zZ2"/>
@@ -743,12 +808,14 @@
                                 </connections>
                             </datePicker>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iBp-ed-aTx">
-                                <rect key="frame" x="0.0" y="336" width="414" height="472"/>
+                                <rect key="frame" x="0.0" y="338" width="414" height="470"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqN-Mp-MX1">
-                                <rect key="frame" x="184" y="256" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="184" y="256" width="46" height="32"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Find"/>
                                 <connections>
                                     <action selector="FindButtonPressed:" destination="ZEe-sG-xGZ" eventType="touchUpInside" id="1dC-oX-urq"/>
                                 </connections>
@@ -803,7 +870,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzF-r2-yft">
-                                <rect key="frame" x="190" y="341" width="30" height="30"/>
+                                <rect key="frame" x="190" y="341" width="33" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" title="Find"/>
                                 <connections>
                                     <action selector="findButtonPressed:" destination="qqe-wK-Hnb" eventType="touchUpInside" id="Tdz-K0-eMF"/>
@@ -851,4 +920,5 @@
             <point key="canvasLocation" x="-746.37681159420299" y="-571.20535714285711"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
