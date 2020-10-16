@@ -43,7 +43,7 @@ class DataBase {
     private let workerCategory = Expression<String>("workerCategory")
     private let contractID = Expression<Int>("contractID")
     
-    private init(){
+    private init() {
         do {
             let db = try Connection("Users/alisa/lab_2.sqlite3")
             self.database = db
@@ -134,7 +134,7 @@ class DataBase {
             print(error)
         }
     }
-    
+
     func deleteWorker(workerID: Int){
         let worker = self.workersTable.filter(self.idWorker == workerID)
         let deleteWorker = worker.delete()
@@ -279,6 +279,7 @@ class DataBase {
          result?.forEach({ (row) in
             do{
                 let worker: Worker = Worker()
+                worker.workerID = try row.get(idWorker)
                 worker.name = try row.get(workerName)
                 worker.age = try row.get(age)
                 worker.riskCategory = try row.get(riskCategory)
@@ -317,6 +318,7 @@ class DataBase {
         result?.forEach({ (row) in
             do{
                 let agent = Agent()
+                agent.agentID = try row.get(idAgent)
                 agent.name = try row.get(agentName)
                 agent.passport = try row.get(passport)
                 agent.phone = try row.get(phone)

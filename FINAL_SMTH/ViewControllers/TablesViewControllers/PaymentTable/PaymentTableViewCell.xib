@@ -16,26 +16,23 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX8-dj-Z8V">
-                        <rect key="frame" x="10" y="12" width="100" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="100" id="hqz-Wu-1Rl"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX8-dj-Z8V">
+                        <rect key="frame" x="10" y="12" width="178" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8x-ca-hIi">
-                        <rect key="frame" x="120" y="12" width="70" height="21"/>
+                        <rect key="frame" x="198" y="12" width="60" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="70" id="ST1-1d-gTL"/>
+                            <constraint firstAttribute="width" constant="60" id="mPY-Er-pqA"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmu-1B-h0Z">
-                        <rect key="frame" x="200" y="12" width="110" height="21"/>
+                        <rect key="frame" x="268" y="12" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -45,8 +42,11 @@
                     <constraint firstItem="HX8-dj-Z8V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="2YZ-Zu-i7p"/>
                     <constraint firstItem="y8x-ca-hIi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="AGz-qH-Do3"/>
                     <constraint firstItem="y8x-ca-hIi" firstAttribute="leading" secondItem="HX8-dj-Z8V" secondAttribute="trailing" constant="10" id="FbF-pB-YCI"/>
+                    <constraint firstAttribute="bottom" secondItem="HX8-dj-Z8V" secondAttribute="bottom" constant="11" id="GH6-J2-z54"/>
+                    <constraint firstItem="y8x-ca-hIi" firstAttribute="centerY" secondItem="HX8-dj-Z8V" secondAttribute="centerY" id="KjO-wM-R9A"/>
                     <constraint firstAttribute="trailing" secondItem="Hmu-1B-h0Z" secondAttribute="trailing" constant="10" id="W2d-4h-QD8"/>
                     <constraint firstItem="HX8-dj-Z8V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eKM-Mx-3qO"/>
+                    <constraint firstItem="Hmu-1B-h0Z" firstAttribute="centerY" secondItem="y8x-ca-hIi" secondAttribute="centerY" id="g4Z-Me-Uhg"/>
                     <constraint firstItem="Hmu-1B-h0Z" firstAttribute="leading" secondItem="y8x-ca-hIi" secondAttribute="trailing" constant="10" id="gl4-8y-QSb"/>
                     <constraint firstItem="Hmu-1B-h0Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="pPf-ZK-2YD"/>
                 </constraints>

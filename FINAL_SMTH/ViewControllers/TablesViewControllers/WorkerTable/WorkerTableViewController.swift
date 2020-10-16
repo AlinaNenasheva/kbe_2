@@ -7,7 +7,7 @@ class WorkerTableViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WorkerTableViewCell", for: indexPath) as! WorkerTableViewCell
-        cell.workerName.text = workers[indexPath.row].name
+        cell.workerName.text = "\(workers[indexPath.row].workerID!)  \(workers[indexPath.row].name!)"
         cell.age.text = String(workers[indexPath.row].age!)
         cell.riskCategory.text = workers[indexPath.row].riskCategory
         cell.companyCode.text = workers[indexPath.row].companyCode

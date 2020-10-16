@@ -6,14 +6,13 @@ class AgentTableViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "AgentTableViewCell", for: indexPath) as! AgentTableViewCell
-        cell.agentName.text = agents[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AgentTableViewCell", for: indexPath) as! AgentTableViewCell
+        cell.agentName.text = "\(agents[indexPath.row].agentID!) \(agents[indexPath.row].name!)"
         cell.passport.text = agents[indexPath.row].passport
         cell.phone.text = agents[indexPath.row].phone
         cell.insuranceCompany.text = agents[indexPath.row].insuranceCompany
         return cell
     }
-    
 
     @IBOutlet var tableView: UITableView!
     let agents = DataBase.shared.getListOfAgents()
