@@ -45,12 +45,73 @@ class DataBase {
     
     private init() {
         do {
-            let db = try Connection("Users/alisa/lab_2.sqlite3")
+            let databaseFileName = "lab_2.sqlite3"
+            let databaseFilePath = "\(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])/\(databaseFileName)"
+            let db = try Connection(databaseFilePath)
             self.database = db
+            createWorkerTable()
+            createAgentTable()
+            createCompanyTable()
+            createPaymentTable()
+            createContractTable()
             try database.execute("PRAGMA foreign_keys = ON;")
         } catch {
             print(error)
         }
+    }
+    
+    func createWorkerTable(){
+        try! database!.run(workersTable.create(ifNotExists: true) { table in
+            table.column(idWorker, primaryKey: .autoincrement)
+            table.column(workerName)
+            table.column(age)
+            table.column(riskCategory)
+            table.column(companyCode)
+            table.foreignKey(companyCode, references: companiesTable, code, delete: .cascade)
+        })
+    }
+    
+    func createAgentTable(){
+        try! database!.run(agentsTable.create(ifNotExists: true) { table in
+            table.column(idAgent, primaryKey: .autoincrement)
+            table.column(agentName)
+            table.column(passport)
+            table.column(phone)
+            table.column(insuranceCompany)
+        })
+    }
+    
+    func createCompanyTable(){
+        try! database!.run(companiesTable.create(ifNotExists: true) { table in
+            table.column(code, primaryKey: true)
+            table.column(fullName)
+            table.column(shortName)
+            table.column(address)
+            table.column(bankID)
+            table.column(specialization)
+        })
+    }
+    
+    func createContractTable(){
+        try! database!.run(contractsTable.create(ifNotExists: true) { table in
+            table.column(idContract, primaryKey: .autoincrement)
+            table.column(dateOfSigning)
+            table.column(dateOfExpiring)
+            table.column(insuranceSum)
+            table.column(contractCompanyCode)
+            table.column(contractAgentID)
+            table.foreignKey(contractCompanyCode, references: companiesTable, code, delete: .cascade)
+            table.foreignKey(contractAgentID, references: agentsTable, idAgent, delete: .cascade)
+        })
+    }
+    
+    func createPaymentTable(){
+        try! database!.run(paymentsTable.create(ifNotExists: true) { table in
+            table.column(workerCategory)
+            table.column(sumOfPayments)
+            table.column(contractID)
+            table.foreignKey(contractID, references: contractsTable, idContract, delete: .cascade)
+        })
     }
     
     func showAgentsList(companyCode: String, currentDate: String) -> [(currentDate: String, agentName: String, phone: String, insuranceCompany: String)]{
