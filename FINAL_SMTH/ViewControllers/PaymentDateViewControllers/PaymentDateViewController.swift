@@ -8,7 +8,7 @@ class PaymentDateViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PaymentDateTableViewCell", for: indexPath) as! PaymentDateTableViewCell
         cell.currentDate.text = pickedPayments[indexPath.row].0
-        cell.contractID.text = pickedPayments[indexPath.row].1
+        cell.paymentID.text = pickedPayments[indexPath.row].1
         cell.workerCategory.text = pickedPayments[indexPath.row].2
         cell.sumOfPayments.text = pickedPayments[indexPath.row].3
         return cell
@@ -18,7 +18,7 @@ class PaymentDateViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet var datePicker: UIDatePicker!
     var currentDate: String?
     @IBOutlet var tableView: UITableView!
-    typealias PickedPayment = (currentDate: String, contractID: String, workerCategory: String, sumOfPayments: String)
+    typealias PickedPayment = (currentDate: String, paymentID: String, workerCategory: String, sumOfPayments: String)
     var pickedPayments = [PickedPayment]()
     
     override func viewDidLoad() {

@@ -53,8 +53,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="contractID" destination="Hmu-1B-h0Z" id="e5y-hh-cW3"/>
                 <outlet property="payment" destination="y8x-ca-hIi" id="T5c-xf-blV"/>
+                <outlet property="paymentID" destination="Hmu-1B-h0Z" id="eXS-Rv-Mvx"/>
                 <outlet property="workerCategory" destination="HX8-dj-Z8V" id="82J-Uj-FAN"/>
             </connections>
             <point key="canvasLocation" x="139" y="108"/>

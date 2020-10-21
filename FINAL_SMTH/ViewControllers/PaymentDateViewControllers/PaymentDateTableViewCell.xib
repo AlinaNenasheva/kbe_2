@@ -65,8 +65,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="contractID" destination="hRp-aM-XOP" id="VLY-Uc-EUO"/>
                 <outlet property="currentDate" destination="ej9-mx-idH" id="n5B-PQ-V6n"/>
+                <outlet property="paymentID" destination="hRp-aM-XOP" id="N7Y-VV-P2U"/>
                 <outlet property="sumOfPayments" destination="xja-Sv-xqE" id="Sz8-AC-EFc"/>
                 <outlet property="workerCategory" destination="tct-di-wgZ" id="HRE-wd-kGi"/>
             </connections>

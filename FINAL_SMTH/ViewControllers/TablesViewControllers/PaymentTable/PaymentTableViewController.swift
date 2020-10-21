@@ -9,7 +9,7 @@ class PaymentTableViewController: UIViewController, UITableViewDelegate, UITable
         let cell = tableView.dequeueReusableCell(withIdentifier: "PaymentTableViewCell", for: indexPath) as! PaymentTableViewCell
         cell.workerCategory.text = payments[indexPath.row].workerCategory
         cell.payment.text = String(payments[indexPath.row].sumOfPayment!)
-        cell.contractID.text = String(payments[indexPath.row].contractID!)
+        cell.paymentID.text = String(payments[indexPath.row].paymentID!)
         return cell
     }
     

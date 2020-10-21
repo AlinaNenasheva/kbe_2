@@ -4,7 +4,7 @@ class PaymentTableViewCell: UITableViewCell {
 
     @IBOutlet var workerCategory: UILabel!
     @IBOutlet var payment: UILabel!
-    @IBOutlet var contractID: UILabel!
+    @IBOutlet var paymentID: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

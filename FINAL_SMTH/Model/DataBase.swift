@@ -41,11 +41,16 @@ class DataBase {
     private let paymentsTable = Table("payments")
     private let sumOfPayments = Expression<Int>("sumOfPayments")
     private let workerCategory = Expression<String>("workerCategory")
+    private let idPayment = Expression<Int>("idPayment")
+    
+    private let paymentsIDTable = Table("paymentsID")
     private let contractID = Expression<Int>("contractID")
+    private let paymentID = Expression<Int>("paymentID")
+    private let workerID = Expression<Int>("workerID")
     
     private init() {
         do {
-            let databaseFileName = "lab_2.sqlite3"
+            let databaseFileName = "laboratory_2.sqlite3"
             let databaseFilePath = "\(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])/\(databaseFileName)"
             let db = try Connection(databaseFilePath)
             self.database = db
@@ -54,6 +59,7 @@ class DataBase {
             createCompanyTable()
             createPaymentTable()
             createContractTable()
+            createPaymentsIDTable()
             try database.execute("PRAGMA foreign_keys = ON;")
         } catch {
             print(error)
@@ -109,8 +115,18 @@ class DataBase {
         try! database!.run(paymentsTable.create(ifNotExists: true) { table in
             table.column(workerCategory)
             table.column(sumOfPayments)
+            table.column(idPayment, primaryKey: true)
+        })
+    }
+    
+    func createPaymentsIDTable(){
+        try! database!.run(paymentsIDTable.create(ifNotExists: true) { table in
             table.column(contractID)
+            table.column(paymentID)
+            table.column(workerID)
             table.foreignKey(contractID, references: contractsTable, idContract, delete: .cascade)
+            table.foreignKey(workerID, references: workersTable, idWorker, delete: .cascade)
+            table.foreignKey(paymentID, references: paymentsTable, idPayment, delete: .cascade)
         })
     }
     
@@ -131,12 +147,12 @@ class DataBase {
         return pickedAgents
     }
     
-    func showPaymentsList(currentDate: String) -> [(currentDate: String, contractID: String, workerCategory: String, sumOfPayments: String)]{
-        typealias PickedPayment = (currentDate: String, contractID: String, workerCategory: String, sumOfPayments: String)
+    func showPaymentsList(currentDate: String) -> [(currentDate: String, paymentID: String, workerCategory: String, sumOfPayments: String)]{
+        typealias PickedPayment = (currentDate: String, paymentID: String, workerCategory: String, sumOfPayments: String)
         var pickedPayments = [PickedPayment]()
         do {
             let result = try? database.prepare("""
-                SELECT contractID, workerCategory, sumOfPayments FROM payments JOIN contracts ON contracts.idContract = payments.contractID WHERE  "\(currentDate)" >= contracts.dateOfSigning AND "\(currentDate)" <= contracts.dateOfExpiring
+                 SELECT idPayment, workerCategory, sumOfPayments FROM payments JOIN paymentsID ON payments.idPayment = paymentID JOIN contracts ON paymentsID.contractID = contracts.idContract WHERE  "\(currentDate)" >= contracts.dateOfSigning AND "\(currentDate)" <= contracts.dateOfExpiring
                 """)
             result?.forEach({ (row) in
                     let pickedPayment: PickedPayment
@@ -419,7 +435,7 @@ class DataBase {
                 let payment = Payment()
                 payment.sumOfPayment = try row.get(sumOfPayments)
                 payment.workerCategory = try row.get(workerCategory)
-                payment.contractID = try row.get(contractID)
+                payment.paymentID = try row.get(idPayment)
                 payments.append(payment)
             }catch{
                 print(error)
